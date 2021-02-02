@@ -6,13 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:text="@string/textview"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonRock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickInputButtonRock"
+            android:text="Rock"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonPaper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickInputButtonPaper"
+            android:text="Paper"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonScissors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickInputButtonScissors"
+            android:text="Scissors"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:textSize="24sp" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
